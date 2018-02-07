@@ -13,8 +13,10 @@ feature "User can visit root page" do
     it "sees search page with a list of stations" do
       visit '/'
 
-      page.fill_in "search", with: "80203"
-      click_button "Locate"
+      within(".navbar") do
+        find(:css, "input[value='Search by zip...']").set("80232")
+        click_button "Locate"
+      end
 
       expect(current_path).to eq('/search')
       expect(page).to have_content("Nearby Stations")
