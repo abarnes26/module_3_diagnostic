@@ -5,7 +5,7 @@ class Station
     @name = station[:station_name]
     @address = station[:street_address]
     @fuel_types = station[:fuel_type_code]
-    @distance = station[:distance].round(2)
+    @distance = station[:distance].round(1)
     @access_times = station[:access_days_time]
   end
 
