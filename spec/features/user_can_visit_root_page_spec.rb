@@ -21,6 +21,14 @@ feature "User can visit root page" do
 
         expect(current_path).to eq('/search')
         expect(page).to have_content("Search Results")
+        expect(page).to have_css(".station", :count => 10)
+        within first(".station") do
+          expect(page).to have_content("Name")
+          expect(page).to have_content("Address")
+          expect(page).to have_content("Fuel Types")
+          expect(page).to have_content("Distance")
+          expect(page).to have_content("Access Times")
+        end
       end
     end
   end
