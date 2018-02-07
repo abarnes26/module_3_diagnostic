@@ -12,14 +12,14 @@ class NRELService
 
     def conn
       Faraday.new("https://api.data.gov/nrel/") do |faraday|
-        faraday.header['X-Api-Key'] = ENV['NREL_API_KEY']
+        faraday.headers['X-Api-Key'] = ENV['NREL_API_KEY']
         faraday.adapter           Faraday.default_adapter
       end
     end
 
     def get_json(url)
       response = conn.get(url)
-      JSON.parse(response.body, symbolize_names: true))
+      JSON.parse(response.body, symbolize_names: true)
     end
 
 end

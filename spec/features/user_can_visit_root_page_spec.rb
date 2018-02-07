@@ -11,15 +11,17 @@ feature "User can visit root page" do
 
   describe "and searches for stations by zipcode" do
     it "sees search page with a list of stations" do
-      visit '/'
+      VCR.use_cassette("station_list") do
+        visit '/'
 
-      within(".navbar") do
-        find(:css, "input[value='Search by zip...']").set("80232")
-        click_button "Locate"
+        within(".navbar") do
+          find(:css, "input[value='Search by zip...']").set("80232")
+          click_button "Locate"
+        end
+
+        expect(current_path).to eq('/search')
+        expect(page).to have_content("Nearby Stations")
       end
-
-      expect(current_path).to eq('/search')
-      expect(page).to have_content("Nearby Stations")
     end
   end
 
