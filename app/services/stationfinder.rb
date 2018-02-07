@@ -6,7 +6,9 @@ class StationFinder
   end
 
   def station_list
-    NRELService.new()
+    NRELService.new(@params).stations.each do |station|
+      Station.new(station)
+    end
   end
 
 end
