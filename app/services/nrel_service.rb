@@ -5,7 +5,7 @@ class NRELService
   end
 
   def stations
-    get_json("alt-fuel-stations/v1/nearest.json?fuel_type=LPG,ELEC&zip=#{@params}&radius=6.0&limit=10")
+    get_json("alt-fuel-stations/v1/nearest.json?fuel_type=LPG,ELEC&location=#{@params}&radius=6.0&limit=10")
   end
 
   private

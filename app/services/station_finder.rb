@@ -6,7 +6,7 @@ class StationFinder
   end
 
   def station_list
-    NRELService.new(@params).stations.each do |station|
+    NRELService.new(@params).stations[:fuel_stations].map do |station|
       Station.new(station)
     end
   end

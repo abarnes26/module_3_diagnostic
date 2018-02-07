@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.data.gov/nrel/alt-fuel-stations/v1/nearest.json?fuel_type=LPG,ELEC&limit=10&location=80232&radius=6.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - BkgmGhQer1SfUO2xgYHj2v55FU8z3vlOL5IyEFzK
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 07 Feb 2018 17:25:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '994'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Wed, 07 Feb 2018 17:25:05 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      - max-age=31536000; preload
+      - max-age=31536000; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - df04ebe9-a92c-4b67-b92f-f4d4963a9e2a
+      X-Runtime:
+      - '0.010512'
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), http/1.1 api-umbrella
+        (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.689141,"longitude":-105.088412,"precision":{"value":5,"name":"postal_code","types":["postal_code"]},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":30,"station_counts":{"total":42,"fuels":{"BD":{"total":0},"E85":{"total":0},"ELEC":{"total":32,"stations":{"total":20}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":0},"LPG":{"total":10}}},"offset":0,"fuel_stations":[{"access_days_time":"7am-7pm
+        M-Th and Sat, 7am-8pm F, 9am-5pm Sun","cards_accepted":"A Cash D M V","date_last_confirmed":"2017-11-02","expected_date":null,"fuel_type_code":"LPG","id":20349,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"U-Haul","station_phone":"303-986-5873","updated_at":"2018-02-06T21:00:03Z","geocode_status":"200-9","latitude":39.682156,"longitude":-105.099728,"city":"Lakewood","intersection_directions":"At
+        Garrison","plus4":null,"state":"CO","street_address":"9190 W Jewell Ave","zip":"80232","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":true,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.77205,"distance_km":1.24249},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2018-01-04","expected_date":null,"fuel_type_code":"ELEC","id":50753,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"LAKEWOOD
+        CO","station_phone":"888-758-4389","updated_at":"2018-01-04T21:41:46Z","geocode_status":"GPS","latitude":39.7086498,"longitude":-105.085786,"city":"Lakewood","intersection_directions":"CIVIC
+        CENTER 1; Near the NW corner of the Cultural Center","plus4":null,"state":"CO","street_address":"480
+        S Allison Pkwy","zip":"80226","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772","NEMA520"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:86087"]},"distance":1.35317,"distance_km":2.17772},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2018-01-04","expected_date":null,"fuel_type_code":"ELEC","id":67681,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"RM","station_phone":"888-758-4389","updated_at":"2018-01-04T21:34:29Z","geocode_status":"GPS","latitude":39.7090037,"longitude":-105.0805415,"city":"Lakewood","intersection_directions":"BELMAR
+        1; Parking garage under Whole Foods Market, near W. Alaska Dr. entrance","plus4":null,"state":"CO","street_address":"7444
+        W Alaska Dr","zip":"80226","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:121187"]},"distance":1.43309,"distance_km":2.30633},{"access_days_time":"7am-7pm
+        M-Th and Sat, 7am-8pm F, 9am-5pm Sun","cards_accepted":"A Cash D M V","date_last_confirmed":"2017-11-02","expected_date":null,"fuel_type_code":"LPG","id":70896,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"U-Haul","station_phone":"303-936-2401","updated_at":"2018-02-06T21:00:03Z","geocode_status":"200-9","latitude":39.696471,"longitude":-105.053217,"city":"Lakewood","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1104
+        S Sheridan Blvd","zip":"80232","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":1.9428,"distance_km":3.12663},{"access_days_time":"MO:
+        12:00am-12:00am; TU: 12:00am-12:00am; WE: 12:00am-12:00am; TH: 12:00am-12:00am;
+        FR: 12:00am-12:00am; SA: 12:00am-12:00am; SU: 12:00am-12:00am","cards_accepted":null,"date_last_confirmed":"2018-01-04","expected_date":null,"fuel_type_code":"ELEC","id":69851,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Jefferson
+        Building","station_phone":"800-663-5633","updated_at":"2018-01-04T21:29:35Z","geocode_status":"GPS","latitude":39.649500555906,"longitude":-105.07769230238,"city":"Lakewood","intersection_directions":"These
+        stations are available 24/7","plus4":null,"state":"CO","street_address":"7220
+        W Jefferson Ave","zip":"80235","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["1148"],"posts":["2252"]},"distance":2.79387,"distance_km":4.4963},{"access_days_time":"7am-7pm
+        M-Th and Sat, 7am-8pm F, 9am-5pm Sun","cards_accepted":"A Cash D Debit M V","date_last_confirmed":"2017-11-02","expected_date":null,"fuel_type_code":"LPG","id":20341,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"U-Haul","station_phone":"303-202-0686","updated_at":"2018-02-06T21:00:03Z","geocode_status":"GPS","latitude":39.72957,"longitude":-105.080944,"city":"Lakewood","intersection_directions":"2
+        blocks north of 6th Ave","plus4":null,"state":"CO","street_address":"830 Wadsworth
+        Blvd","zip":"80215","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.81745,"distance_km":4.53425},{"access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","cards_accepted":null,"date_last_confirmed":"2018-01-04","expected_date":null,"fuel_type_code":"ELEC","id":69015,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Walgreens
+        - Denver, CO #10116","station_phone":"800-663-5633","updated_at":"2018-01-04T21:29:30Z","geocode_status":"GPS","latitude":39.657547,"longitude":-105.054179,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"3067
+        South Sheridan Boulevard","zip":"80227","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["1127"],"posts":["243"]},"distance":2.84286,"distance_km":4.57514},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2017-11-02","expected_date":null,"fuel_type_code":"ELEC","id":46540,"groups_with_access_code":"Private","open_date":"2012-01-30","owner_type_code":"P","status_code":"E","station_name":"Saint
+        Anthony Hospital","station_phone":null,"updated_at":"2018-02-06T21:00:03Z","geocode_status":"GPS","latitude":39.7171136,"longitude":-105.1288004,"city":"Lakewood","intersection_directions":null,"plus4":null,"state":"CO","street_address":"11600
+        W 2nd Pl","zip":"80228","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.8908,"distance_km":4.65229},{"access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","cards_accepted":null,"date_last_confirmed":"2018-01-04","expected_date":null,"fuel_type_code":"ELEC","id":43234,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Walgreens
+        - Lakewood, CO #9566","station_phone":"800-663-5633","updated_at":"2018-01-04T21:27:56Z","geocode_status":"GPS","latitude":39.6998508,"longitude":-105.142385,"city":"Lakewood","intersection_directions":null,"plus4":null,"state":"CO","street_address":"12880
+        W Alameda Pkwy","zip":"80228","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["150"],"posts":["248"]},"distance":2.96997,"distance_km":4.7797},{"access_days_time":"7am-7pm
+        M-Th and Sat, 7am-8pm F, 9am-5pm Sun","cards_accepted":"A Cash D M V","date_last_confirmed":"2017-11-02","expected_date":null,"fuel_type_code":"LPG","id":70897,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"U-Haul","station_phone":"303-986-5524","updated_at":"2018-02-06T21:00:03Z","geocode_status":"200-9","latitude":39.712161,"longitude":-105.135813,"city":"Lakewood","intersection_directions":null,"plus4":null,"state":"CO","street_address":"12300
+        W Cedar Dr","zip":"80228","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.98386,"distance_km":4.80206}]}'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 17:25:05 GMT
+recorded_with: VCR 4.0.0
