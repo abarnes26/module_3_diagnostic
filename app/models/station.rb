@@ -1,12 +1,12 @@
 class Station
+  attr_reader :name, :address, :fuel_types, :distance, :access_times
 
-  def initialize(station_json)
-    binding.pry
-    @name = station_list
-    @address = station_list
-    @fuel_types = station_list
-    @distance = station_list
-    @access_times = station_list
+  def initialize(station)
+    @name = station[:station_name]
+    @address = station[:street_address]
+    @fuel_types = station[:fuel_type_code]
+    @distance = station[:distance].round(2)
+    @access_times = station[:access_days_time]
   end
 
   # t.string "name"

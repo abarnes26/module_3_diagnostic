@@ -20,7 +20,7 @@ feature "User can visit root page" do
         end
 
         expect(current_path).to eq('/search')
-        expect(page).to have_content("Nearby Stations")
+        expect(page).to have_content("Search Results")
       end
     end
   end
